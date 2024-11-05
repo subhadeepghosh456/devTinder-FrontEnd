@@ -43,7 +43,7 @@ const Requests = () => {
   if (requests.length === 0) return <h2>No Request found</h2>;
 
   return (
-    <div className="text-center my-10 w-1/2 mx-auto">
+    <div className="text-center my-10 w-2/3 mx-auto">
       <h2 className="text-bold text-2xl">Requests</h2>
       {requests.map((request) => {
         const {
@@ -61,9 +61,9 @@ const Requests = () => {
             className="flex m-4 p-4 justify-between rounded-lg bg-base-300"
             key={_id}
           >
-            <div>
+            <div className="w-20 h-20">
               <img
-                className="w-20 h-20 rounded-full"
+                className="w-full h-full object-cover rounded-full"
                 src={photoUrl}
                 alt="photo"
               />
